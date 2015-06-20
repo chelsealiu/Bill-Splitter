@@ -1,25 +1,115 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Bill Splitter" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MXY-RO-fjC">
+                                <rect key="frame" x="52" y="100" width="216" height="53"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="40"/>
+                                <color key="textColor" red="1" green="0.60712540382180558" blue="0.81454401245343777" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Total bill:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Of7-Qx-YMf">
+                                <rect key="frame" x="39" y="221" width="107" height="21"/>
+                                <color key="tintColor" red="0.60812120562235616" green="1" blue="0.879389432570021" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="25"/>
+                                <color key="textColor" red="0.57541585319999999" green="1" blue="0.59779169909999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JyL-6M-FnW">
+                                <rect key="frame" x="212" y="217" width="62" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="62" id="4lz-2C-sT0"/>
+                                    <constraint firstAttribute="height" constant="30" id="7uS-uS-MbL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Party size:" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8MI-Sh-nWC">
+                                <rect key="frame" x="37" y="283" width="135" height="21"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="25"/>
+                                <color key="textColor" red="0.57541585319999999" green="1" blue="0.59779169909999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UGz-P1-Are">
+                                <rect key="frame" x="146" y="512" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aG5-fR-thw">
+                                <rect key="frame" x="33" y="498" width="255" height="34.5"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="25"/>
+                                <color key="textColor" red="1" green="0.80000001192092896" blue="0.40000000596046448" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="c3T-Ck-EVC">
+                                <rect key="frame" x="40" y="353" width="239" height="31"/>
+                                <color key="tintColor" red="0.57541585316007726" green="1" blue="0.59779169910322827" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="adjustPartySize:" destination="vXZ-lx-hvc" eventType="valueChanged" id="ylt-9F-iCv"/>
+                                </connections>
+                            </slider>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Xm-Is-ZSL">
+                                <rect key="frame" x="86" y="431" width="147" height="51"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="30"/>
+                                <state key="normal" title="Split Bill">
+                                    <color key="titleColor" red="1" green="1" blue="0.40000000596046448" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="splitBillButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="7ow-ml-2jh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.098039217293262482" green="0.098039217293262482" blue="0.098039217293262482" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="aG5-fR-thw" secondAttribute="centerX" id="06V-Ho-nXz"/>
+                            <constraint firstItem="8MI-Sh-nWC" firstAttribute="top" secondItem="Of7-Qx-YMf" secondAttribute="bottom" constant="41" id="E3S-D4-I0r"/>
+                            <constraint firstAttribute="centerX" secondItem="MXY-RO-fjC" secondAttribute="centerX" id="OHQ-PO-WgG"/>
+                            <constraint firstItem="MXY-RO-fjC" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="80" id="R1b-gR-jrg"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="JyL-6M-FnW" secondAttribute="trailing" constant="30" id="Rco-HQ-B6T"/>
+                            <constraint firstItem="Of7-Qx-YMf" firstAttribute="top" secondItem="MXY-RO-fjC" secondAttribute="bottom" constant="68" id="Toc-V4-Qgr"/>
+                            <constraint firstItem="JyL-6M-FnW" firstAttribute="bottom" secondItem="Of7-Qx-YMf" secondAttribute="bottom" constant="5" id="XZQ-uS-GL7"/>
+                            <constraint firstItem="Of7-Qx-YMf" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="23" id="YV1-li-SJI"/>
+                            <constraint firstAttribute="trailing" secondItem="aG5-fR-thw" secondAttribute="trailing" constant="32" id="Z7v-r4-NLl"/>
+                            <constraint firstItem="aG5-fR-thw" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="32" id="hWe-fW-GDl"/>
+                            <constraint firstAttribute="centerX" secondItem="1Xm-Is-ZSL" secondAttribute="centerX" id="iJI-qM-0h7"/>
+                            <constraint firstItem="1Xm-Is-ZSL" firstAttribute="top" secondItem="c3T-Ck-EVC" secondAttribute="bottom" constant="49" id="rmn-Se-ThC"/>
+                            <constraint firstAttribute="centerX" secondItem="c3T-Ck-EVC" secondAttribute="centerX" id="rqW-jg-Fvz"/>
+                            <constraint firstItem="Of7-Qx-YMf" firstAttribute="leading" secondItem="8MI-Sh-nWC" secondAttribute="leading" constant="2" id="tgh-ZT-aUV"/>
+                            <constraint firstItem="aG5-fR-thw" firstAttribute="top" secondItem="1Xm-Is-ZSL" secondAttribute="bottom" constant="30" id="ujA-w5-cyt"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="billAmountTextField" destination="JyL-6M-FnW" id="W13-NW-4tH"/>
+                        <outlet property="partySizeLabel" destination="8MI-Sh-nWC" id="4eC-45-NYK"/>
+                        <outlet property="partySizeSlider" destination="c3T-Ck-EVC" id="vmU-Jl-zHE"/>
+                        <outlet property="splitBillLabel" destination="aG5-fR-thw" id="fTa-VF-XBm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="234" y="340"/>
         </scene>
     </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
 </document>

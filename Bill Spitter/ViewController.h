@@ -11,5 +11,18 @@
 @interface ViewController : UIViewController
 
 
+@property (weak, nonatomic) IBOutlet UITextField *billAmountTextField;
+
+@property (weak, nonatomic) IBOutlet UISlider *partySizeSlider;
+
+@property (weak, nonatomic) IBOutlet UILabel *splitBillLabel;
+
+@property (weak, nonatomic) IBOutlet UILabel *partySizeLabel;
+
+@property (nonatomic) int sliderValue;
+
+- (BOOL) checkNumberFormat: (NSString *) someInput;
+
+
 @end
 
