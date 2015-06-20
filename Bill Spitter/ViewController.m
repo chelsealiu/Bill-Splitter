@@ -43,7 +43,6 @@
         double tempBillAmount = [billInput doubleValue];
         [self adjustPartySize:self.partySizeSlider];
         double tempSplitBill = tempBillAmount/self.sliderValue;
-        NSLog(@"%f", tempSplitBill);
         NSString *finalString = [NSString stringWithFormat:@"%.2f", tempSplitBill];
         self.splitBillLabel.text = [@"Each person will pay $" stringByAppendingString:finalString];
     } else {
